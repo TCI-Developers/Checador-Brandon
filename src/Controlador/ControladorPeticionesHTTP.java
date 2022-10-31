@@ -48,7 +48,7 @@ public class ControladorPeticionesHTTP {
     
     
     public void cargarRegitros(){
-        String fecha = Fecha.before();
+        String fecha = Fecha.now();
         jsonChecadas = ctrlChecador.getChecadas(fecha);  
         //System.out.println(jsonChecadas);
         habilitarComponentes();

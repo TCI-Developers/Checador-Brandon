@@ -6,7 +6,9 @@
 package Frames;
 
 import Connection.ConnectPostgreSQL;
+import Connection.ConnectSQLServer;
 import Controlador.ControladorPeticionesCustomDateHTTP;
+import Modelos.ModeloBase;
 import Utils.Fecha;
 import java.awt.Color;
 import java.awt.Desktop;
@@ -27,7 +29,8 @@ import javax.swing.plaf.basic.BasicProgressBarUI;
  * @author jorge
  */
 public class ventanaCustomDate extends javax.swing.JFrame {
-    ConnectPostgreSQL connectPostgreSQL = new ConnectPostgreSQL();
+    //ConnectPostgreSQL connectPostgreSQL = new ConnectPostgreSQL();
+    //ConnectSQLServer connectSQLServer = new ConnectSQLServer();
     ControladorPeticionesCustomDateHTTP ctrlHttp = new ControladorPeticionesCustomDateHTTP();
     String fechaAux="";
     public static boolean enableBtn = false;

@@ -1,4 +1,3 @@
-
 package Enums;
 
 /**
@@ -16,10 +15,15 @@ public enum PostgresEnum {
             "7496",
             "biotime",
             "localhost"),
-    SVFRESH("postgres",
+    /*SVFRESH("postgres",
             "qwertyuiop10",
             "7496",
             "biotime",
+            "localhost");*/
+    SVFRESH("postgres",
+            "root",
+            "5432",
+            "BioTime",
             "localhost");
     
     private final String usuario;
@@ -45,12 +49,21 @@ public enum PostgresEnum {
     public String getContrasena() {
         return contrasena;
     }
+    
+    public String getPuerto(){
+        return puerto;
+    }
+    
+    public String getNombreBD(){
+        return nombreBD;
+    }
+    
+    public String getHost(){
+        return host;
+    }
 
     public String getUrl() {
         return url;
     }
 
-    
-    
-    
 }

@@ -18,10 +18,11 @@ public enum AplicationEnum {
             "ctfa892b5a2z44djur52jsjuj99",
             "bsggzfx2b",
             "8.6.7.9.17"),
-    SVFRESH("b4czat_fwjc_bsp8s76cidmnnuvykcmfw7rvbe",
-            "w4mwhnbrxxd6nbmz8upue7ymgu",
+    SVFRESH("b7tgyp_fwjc_0_c87veyjbug2j87cphcn3hcbdm4n2",
+            "ccrx3accvncnkmbksgqkwbms3u38",
             "bsqfr8zg2",
-            "8.6.7.9.17");
+            "30.6.7.9.31");
+            //"30.6.7.9.31"
     private final String userToken;
     private final String appToken;
     private final String checadorBD;

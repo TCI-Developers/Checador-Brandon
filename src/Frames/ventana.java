@@ -6,6 +6,7 @@
 package Frames;
 
 import Connection.ConnectPostgreSQL;
+import Connection.ConnectSQLServer;
 import Controlador.ControladorPeticionesHTTP;
 import java.awt.Color;
 import java.awt.Desktop;
@@ -27,7 +28,8 @@ import javax.swing.plaf.basic.BasicProgressBarUI;
  * @author jorge
  */
 public class ventana extends javax.swing.JFrame {
-    ConnectPostgreSQL connectPostgreSQL = new ConnectPostgreSQL();
+    //ConnectPostgreSQL connectPostgreSQL = new ConnectPostgreSQL();
+    //ConnectSQLServer connectSQLServer = new ConnectSQLServer();
     ControladorPeticionesHTTP ctrlHttp = new ControladorPeticionesHTTP();
     
     public static boolean enableBtn = false;
@@ -63,11 +65,6 @@ public class ventana extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
         btnEnviar.setText("Enviar");
-        btnEnviar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEnviarActionPerformed(evt);
-            }
-        });
 
         jPanel6.setBackground(new java.awt.Color(51, 51, 51));
 
@@ -162,10 +159,6 @@ public class ventana extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnviarActionPerformed
-        connectPostgreSQL.getConnection();
-    }//GEN-LAST:event_btnEnviarActionPerformed
 
     private void lblSitioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSitioMouseClicked
         try {

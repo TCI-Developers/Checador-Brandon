@@ -25,9 +25,7 @@ public class ControladorRelojChecador {
         //System.out.println(fecha);
         argsChecadas = new ArrayList<>();   //now()     CURRENT_DATE
         try {
-            ResultSet resultSet = Connection.Query.ConsultaSQL("SELECT emp_code,to_char(punch_time,'DD-MM-YYYY HH24:MI:SS') as fecha,concat(extract(year from punch_time),extract(week from punch_time),'-',emp_code) as detail_cheq,concat(id,'-',emp_code) as mergeid" +
-                                                                " FROM public.iclock_transaction" +
-                                                               " where punch_time >= date('"+fecha+" 00:00:00') and punch_time < (date('"+fecha+" 00:00:00')+2) ;");
+            ResultSet resultSet = Connection.Query.ConsultaSQL(fecha);
             while(resultSet.next()){
               agregarRegistro(resultSet);  
             }

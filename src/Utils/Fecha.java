@@ -16,19 +16,25 @@ import java.util.Date;
  */
 public class Fecha {
     static SimpleDateFormat format = new SimpleDateFormat("YYYY-MM-dd");
-    public static  String fecha(){
+    
+    public static String fecha(){
         Date fecha = new Date();
         
         return FormattFecha.FormateToDate(fecha);
     }
     
-     public static String before(){
-         Date fecha = new Date();
-         Calendar today = Calendar.getInstance();
+    public static String before(){
+        Date fecha = new Date();
+        Calendar today = Calendar.getInstance();
         today.setTime(fecha);
         today.add(Calendar.DATE,-1);
         java.util.Date before = today.getTime();
         return FormattFecha.FormateToDate(before);
+    }
+    
+    public static String now(){
+        Date fecha = new Date();
+        return FormattFecha.FormateToDate(fecha);
     }
      
      
