@@ -20,6 +20,7 @@ import Modelos.ModeloBase;
  */
 public class Query {
     
+    
     public static ResultSet ConsultaSQL(String fecha) throws SQLException{
         //llega el modelo 
         //ModeloBase myModel2 = new ModeloBase(SQLServerEnum.SVFRESH);
