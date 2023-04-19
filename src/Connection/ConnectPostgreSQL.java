@@ -13,7 +13,8 @@ import javax.swing.JOptionPane;
 public class ConnectPostgreSQL {
     private static ConnectPostgreSQL instance;
     private Connection connection;
-    //PostgresEnum postgres = PostgresEnum.SVFRESH;
+    PostgresEnum postgres = PostgresEnum.MONAR;
+    //
     
     
     public ConnectPostgreSQL(ModeloBase myModel){
