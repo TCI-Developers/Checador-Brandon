@@ -21,8 +21,14 @@ public enum AplicationEnum {
     SVFRESH("b7tgyp_fwjc_0_c87veyjbug2j87cphcn3hcbdm4n2",
             "ccrx3accvncnkmbksgqkwbms3u38",
             "bsqfr8zg2",
-            "30.6.7.9.31");
+            "51.6.7.9.31"),
             //"30.6.7.9.31"
+    MONAR("b7tgyp_fwjc_0_c87veyjbug2j87cphcn3hcbdm4n2",
+            "bxh8upsdithg72bsg3bh8bf2acx2",
+            "bsy35rc7j",
+            "30.6.7.9.38")
+    ;
+
     private final String userToken;
     private final String appToken;
     private final String checadorBD;
