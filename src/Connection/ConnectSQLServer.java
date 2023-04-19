@@ -1,5 +1,6 @@
 package Connection;
 
+import Enums.SQLServerEnum;
 import Modelos.ModeloBase;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -15,6 +16,7 @@ public class ConnectSQLServer {
     private static ConnectSQLServer instance;
     private Connection connection;
     //SQLServerEnum sqlserver = SQLServerEnum.SVFRESH;
+    //
     
     
     public ConnectSQLServer(ModeloBase myModel){
