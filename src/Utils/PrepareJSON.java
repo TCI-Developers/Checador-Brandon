@@ -14,7 +14,7 @@ import org.json.JSONObject;
  * @author jorge
  */
 public class PrepareJSON {
-    AplicationEnum aplication = AplicationEnum.SVFRESH;
+    AplicationEnum aplication = AplicationEnum.BRANDON;
     public JSONObject encodeJson(ArrayList<String> args,String... mergeId){
         JSONObject jsondata = new JSONObject();
         JSONObject json = new JSONObject();

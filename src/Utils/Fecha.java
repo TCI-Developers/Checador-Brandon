@@ -38,7 +38,6 @@ public class Fecha {
     }
      
      
-    
     public static String FormateToText(JDateChooser jdcFecha){
              if(jdcFecha.getDate() != null){
                 return FormattFecha.FormateToDate(jdcFecha.getDate());

@@ -14,8 +14,7 @@ public class ApplicationTO {
     private final String clist;
     
     public ApplicationTO(){
-        
-        AplicationEnum enum1 = AplicationEnum.BONANZA;
+        AplicationEnum enum1 = AplicationEnum.MONAR;
         this.userToken = enum1.getUserToken();
         this.appToken = enum1.getAppToken();
         this.checadorBD = enum1.getChecadorBD();

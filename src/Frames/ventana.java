@@ -19,8 +19,10 @@ import java.util.concurrent.Executors;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ImageIcon;
+import javax.swing.JFrame;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+import javax.swing.WindowConstants;
 import javax.swing.plaf.basic.BasicProgressBarUI;
 
 /**
@@ -40,6 +42,7 @@ public class ventana extends javax.swing.JFrame {
         initComponents();
         initComponentes();
         initAssets();
+        //this.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
     }
 
     /**

@@ -24,7 +24,20 @@ public enum PostgresEnum {
             "root",
             "5432",
             "BioTime",
-            "localhost");
+            "localhost"),
+    
+    MONAR("postgres",
+            "biotime123456",
+            "7496",
+            "biotime",
+            "localhost"
+    ),
+    BRANDON("postgres",
+            "Tci-2023$",
+            "7496",
+            "biotime",
+            "localhost"
+    );
     
     private final String usuario;
     private final String contrasena;

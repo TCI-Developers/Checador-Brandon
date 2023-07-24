@@ -26,7 +26,11 @@ public enum AplicationEnum {
     MONAR("b7tgyp_fwjc_0_c87veyjbug2j87cphcn3hcbdm4n2",
             "bxh8upsdithg72bsg3bh8bf2acx2",
             "bsy35rc7j",
-            "30.6.7.9.38")
+            "30.6.7.9.38"),
+    BRANDON("b7tgyp_fwjc_0_c87veyjbug2j87cphcn3hcbdm4n2",
+            "d4ay6t2dzr4kvyb2rpxahb5dpusa",
+            "btcn248d6",
+            "67.6.7.9.31")
     ;
 
     private final String userToken;

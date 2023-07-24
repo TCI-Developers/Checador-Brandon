@@ -83,7 +83,7 @@ public class ModeloBase {
             //si el objeto es una instancia de Postgres
             return "SELECT emp_code,to_char(punch_time,'DD-MM-YYYY HH24:MI:SS') as fecha,concat(extract(year from punch_time),extract(week from punch_time),'-',emp_code) as detail_cheq,concat(id,'-',emp_code) as mergeid" +
             " FROM iclock_transaction" +
-            " where punch_time >= date('"+fecha+" 00:00:00') and punch_time < (date('"+fecha+" 00:00:00')+2) ;";
+            " where punch_time >= date('"+fecha+" 00:00:00') -1;";
         }
         else{
             return "SELECT emp_code,\n" +
@@ -92,9 +92,16 @@ public class ModeloBase {
             "CONCAT(id,'-',emp_code) as mergeid\n" +
             "FROM iclock_transaction\n" +
             "WHERE DATEDIFF(DAY, punch_time, '"+fecha+"')=0 OR DATEDIFF(DAY, punch_time, DATEADD(DAY, -1, '"+fecha+"'))=0;";
+            
+            //SELECT person.emp_code,
+            //		person.id,
+            //punch_time AS fecha,
+            //CONCAT(DATEPART(yy,punch_time), DATEPART(ww, punch_time)-1,'-',person.emp_code) AS detail_cheq,
+            //CONCAT(t.id,'-',person.emp_code) as mergeid
+            //FROM iclock_transaction t
+            //		INNER JOIN personnel_employee person ON person.id =  t.emp_code
+            //WHERE DATEDIFF(DAY, punch_time, '2022-12-27')=0 OR DATEDIFF(DAY, punch_time, DATEADD(DAY, -1, '2022-12-27'))=0;
         }
     }
-    
-    
-    
+       
 }
